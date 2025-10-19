@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>歡迎來到首頁</h1>
+    <p>這是您的網站首頁。</p>
+    <a href="/news_list" class="btn">查看最新消息</a>
+    <a href="/article_list" class="btn">查看文章列表</a>
+  </body>
+</html>

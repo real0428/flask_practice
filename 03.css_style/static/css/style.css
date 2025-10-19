@@ -1,0 +1,45 @@
+body {
+  background: #f5f6fa;
+  font-family: "Segoe UI", "微軟正黑體", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+h1 {
+  color: #2d8cf0;
+  margin-top: 60px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 32px;
+  background: linear-gradient(90deg, #2d8cf0 0%, #57a3f3 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(45, 140, 240, 0.12);
+  transition: background 0.3s, transform 0.2s;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #57a3f3 0%, #2d8cf0 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(45, 140, 240, 0.18);
+}
