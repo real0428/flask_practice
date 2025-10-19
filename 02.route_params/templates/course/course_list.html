@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>課程列表</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f5f7fa;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 500px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        padding: 32px 24px;
+      }
+      h1 {
+        text-align: center;
+        color: #2d3a4b;
+        margin-bottom: 24px;
+        letter-spacing: 2px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        background: #eaf0f6;
+        margin-bottom: 16px;
+        padding: 16px 20px;
+        border-radius: 6px;
+        color: #34495e;
+        font-size: 1.1em;
+        transition: all 0.2s;
+      }
+      li:hover {
+        background: #d0e6fa;
+        padding-left: 32px;
+      }
+      .course-link {
+        display: block;
+        text-decoration: none;
+        color: #2d3a4b;
+        font-weight: bold;
+      }
+      .course-link:hover {
+        color: #1976d2;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>課程列表</h1>
+      <ul>
+        <li>
+          <a
+            class="course-link"
+            href="{{ url_for('course_detail', course_id=1) }}"
+            >課程1</a
+          >
+        </li>
+        <li>
+          <a
+            class="course-link"
+            href="{{ url_for('course_detail', course_id=2) }}"
+            >課程2</a
+          >
+        </li>
+        <li>
+          <a
+            class="course-link"
+            href="{{ url_for('course_detail', course_id=3) }}"
+            >課程3</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
